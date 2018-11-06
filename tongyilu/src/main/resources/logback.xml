@@ -10,6 +10,7 @@
     </appender>
 
 
+
     <!-- 系统日志输出 -->
     <appender name="file" class="ch.qos.logback.core.rolling.RollingFileAppender">
         <file>${log_home}/tayantayu.log</file>
