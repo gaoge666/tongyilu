@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: tongyilu
+  profiles:
+    active: test
+  http:
+    encoding:
+      charset: utf-8
+      enabled: true
+      force: true
+  jackson:
+    date-format: YYYY-MM-dd
+    joda-date-time-format: YYYY-MM-dd HH:mm:ss
+mybatis:
+  type-aliases-package: com.example.tongyilu.entity
+  mapper-locations: classpath:mybatis/*.xml
+  config-location: classpath:mybatis-config.xml
+pagehelper:
+  helperDialect: mysql
+  reasonable: true
+  supportMethodsArguments: true
+  params: count=countSql
